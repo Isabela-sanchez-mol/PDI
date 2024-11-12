@@ -4,10 +4,11 @@
   align-items: center;   /* Centra los elementos dentro de la caja */
   justify-content: center; /* Centra los elementos dentro de la caja */
   border-radius: 10px;
-  width: 300px;
+  width: auto;
   margin: 10px auto;
   background-color: #8C6535;
   position: relative;
+  padding: 5px;
 }
 
 .upload-button {
@@ -59,7 +60,9 @@
 /* Contenedor de la imagen cargada */
 .image-container {
   position: relative;
-  display: inline-block;
+  display: flex; /* Usamos flex para centrar el contenido */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente si es necesario */
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -86,6 +89,12 @@
 }
 
 img {
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+.imgProcesada{
+  display: block; /* Hace que la imagen sea un bloque, permitiendo el centrado */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
   border: 2px solid #ddd;
   border-radius: 5px;
 }

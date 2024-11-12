@@ -212,7 +212,7 @@ const UploadAndClassify = () => {
           </>
         )}
         {processedImage && (
-          <img
+          <img id='imgProcesada'
             src={processedImage}
             alt="Imagen procesada"
             style={{ width: '224px', height: '224px', marginLeft: '20px' }}
